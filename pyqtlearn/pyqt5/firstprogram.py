@@ -2,10 +2,12 @@
 # -*- coding:utf-8 -*-
 #  __author__ = 'liu'
 
-import sys,cirle
+import sys
+
 from PyQt5.QtWidgets import QApplication,QWidget, QToolTip, QPushButton, QMessageBox
-from PyQt5.QtGui import QFont, QIcon
+from PyQt5.QtGui import QFont
 from PyQt5.QtCore import QCoreApplication
+
 
 class Example(QWidget):
     def __init__(self):
