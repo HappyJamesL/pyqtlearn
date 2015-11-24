@@ -73,7 +73,7 @@ class Example(QMainWindow):
         print(type(text))
         return max(string.ascii_lowercase, key=text.count)
     # str.ascii_lowercase
-    ax = checkio('saasada11111111!!!!!!!!!!!!!!!!!!!!!!!!f')
+    ax = checkio('saasada11111111!!!!!!!!f')
     print(ax)
     print(checkio('fgFdhasaf'))
 
