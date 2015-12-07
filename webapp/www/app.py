@@ -6,7 +6,11 @@ import logging; logging.basicConfig(level=logging.INFO)
 import asyncio, os, json, time
 from datetime import datetime
 from aiohttp import web
+from jinja2 import Environment, FileSystemLoader
+
+from config import configs
 import orm
+from coroweb import add_routes, add_static
 
 def index(request):
     return web.Response(body=b'<h1>Awesome</h1>')
@@ -24,4 +28,3 @@ loop.run_until_complete(init(loop))
 loop.run_forever()
 
 
-from orm import Model, StringField, IntegerField
