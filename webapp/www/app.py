@@ -3,14 +3,9 @@
 __author__ = 'zejun_liu'
 
 import logging; logging.basicConfig(level=logging.INFO)
-import asyncio, os, json, time
-from datetime import datetime
+import asyncio
 from aiohttp import web
-from jinja2 import Environment, FileSystemLoader
 
-from config import configs
-import orm
-from coroweb import add_routes, add_static
 
 def index(request):
     return web.Response(body=b'<h1>Awesome</h1>')
